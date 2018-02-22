@@ -1,0 +1,47 @@
+<div class="top-content">
+    <div class="inner-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3 form-box">
+                    <div class="form-top">
+                        <div class="form-top-left">
+                            <h3>Login to our site{{loginModel}}</h3>
+                            <p>Enter your username and password to log on:</p>
+                        </div>
+                        <div class="form-top-right">
+                            <i class="fa fa-key"></i>
+                        </div>
+                    </div>
+                    <div class="form-bottom">
+                        <!--<form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+                            <div class="form-group">
+                                <label class="sr-only" for="form-username">Username</label>
+                                <input [(ngModel)]="loginModel.UserId" type="text" required name="form-username" placeholder="Username..." [ngClass]="{'errorBox': !loginModel.UserId && loginForm.form.touched}"
+                                    class="form-username form-control" id="form-username">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="form-password">Password</label>
+                                <input [(ngModel)]="loginModel.Password" type="password" name="form-password" placeholder="Password..." class="form-password form-control" [ngClass]="{'errorBox': !loginModel.Password && loginForm.form.touched}"
+                                    id="form-password">
+                            </div>
+                            <button type="submit" class="btn">Sign in!</button>
+                        </form>-->
+
+                        <div class="form-group">
+                            <label class="sr-only" for="form-username">Username</label>
+                            <input [(ngModel)]="loginModel.UserId" type="text" required name="form-username" placeholder="Username..." class="form-username form-control"
+                                id="form-username">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="form-password">Password</label>
+                            <input [(ngModel)]="loginModel.Password" type="password" name="form-password" placeholder="Password..." class="form-password form-control"
+                                id="form-password">
+                        </div>
+                        <button (click)="onSubmit()" class="btn">Sign in!</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
